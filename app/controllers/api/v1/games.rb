@@ -14,7 +14,10 @@ module API
 
         desc "Check details of a game"
         get "/:id" do
-          Game.find(params[:id])
+          id = params[:id]
+          Rails.cache.fetch("game#{id}") do
+            Game.find(id)
+          end
         end
 
         desc "add score value to a Game"

@@ -1,5 +1,6 @@
 class Game < ApplicationRecord
   before_create :assign_score_info
+  after_commit :clear_cache
 
   private
   def assign_score_info
@@ -22,5 +23,9 @@ class Game < ApplicationRecord
       pending_calculation: [],
       frames: frames
     }
+  end
+
+  def clear_cache
+    Rails.cache.delete("game#{self.id}")
   end
 end
