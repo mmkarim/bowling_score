@@ -375,36 +375,238 @@ Started GET "/api/v1/swagger_doc" for ::1 at 2018-08-26 18:06:29 +0800
 Started GET "/assets/grape_swagger_rails/throbber-8ee91ceb10dcdf1c87635ff1a1ebe25818612fd9a07cb2dfca79928c3b86d9dc.gif" for ::1 at 2018-08-26 18:06:33 +0800
 Started GET "/api/v1/games/list" for ::1 at 2018-08-26 18:06:34 +0800
   [1m[36mGame Load (3.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
-DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from require at /Users/apple/bowling_score/bin/rails:9)
-  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7832531787896958555);[0m
-  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
-  [1m[36mActiveRecord::InternalMetadata Load (8.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
-  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
-  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7832531787896958555)[0m
-  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
-  [1m[35m (3.1ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
-FROM pg_constraint c
-JOIN pg_class t1 ON c.conrelid = t1.oid
-JOIN pg_class t2 ON c.confrelid = t2.oid
-JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
-JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
-JOIN pg_namespace t3 ON c.connamespace = t3.oid
-WHERE c.contype = 'f'
-  AND t1.relname = 'games'
-  AND t3.nspname = ANY (current_schemas(false))
-ORDER BY c.conname
-[0m
-Started GET "/documentation" for ::1 at 2018-08-27 13:51:15 +0800
+  [1m[35mSQL (28.4ms)[0m  [1m[32mINSERT INTO "games" ("score_info", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["score_info", "{\"next_frame\":1,\"is_finished\":false,\"result\":0,\"pending_calculation\":[],\"frames\":{\"1\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"2\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"3\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"4\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"5\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"6\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"8\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["created_at", 2018-08-26 10:09:42 UTC], ["updated_at", 2018-08-26 10:09:42 UTC]]
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/documentation" for ::1 at 2018-08-26 18:31:32 +0800
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block (2 levels) in <module:ClassMethods> at /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/abstract_controller/callbacks.rb:191)
+Processing by GrapeSwaggerRails::ApplicationController#index as HTML
+  Rendering /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/grape-swagger-rails-0.2.1/app/views/grape_swagger_rails/application/index.html.erb
+  Rendered /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/grape-swagger-rails-0.2.1/app/views/grape_swagger_rails/application/index.html.erb (88.5ms)
+Completed 200 OK in 113ms (Views: 102.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/swagger_doc" for ::1 at 2018-08-26 18:31:32 +0800
+Started POST "/api/v1/games" for ::1 at 2018-08-26 18:31:54 +0800
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (7.1ms)[0m  [1m[32mINSERT INTO "games" ("score_info", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["score_info", "{\"next_frame\":1,\"is_finished\":false,\"result\":0,\"pending_calculation\":[],\"frames\":{\"1\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"2\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"3\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"4\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"5\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"6\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"8\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["created_at", 2018-08-26 10:31:54 UTC], ["updated_at", 2018-08-26 10:31:54 UTC]]
+  [1m[35m (8.5ms)[0m  [1m[35mCOMMIT[0m
+Started POST "/api/v1/games" for ::1 at 2018-08-26 18:33:09 +0800
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO "games" ("score_info", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["score_info", "{\"current_frame_no\":1,\"is_finished\":false,\"result\":0,\"pending_calculation\":[],\"frames\":{\"1\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"2\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"3\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"4\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"5\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"6\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"8\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["created_at", 2018-08-26 10:33:09 UTC], ["updated_at", 2018-08-26 10:33:09 UTC]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/documentation" for ::1 at 2018-08-26 18:35:34 +0800
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block (2 levels) in <module:ClassMethods> at /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/abstract_controller/callbacks.rb:191)
+Processing by GrapeSwaggerRails::ApplicationController#index as HTML
+  Rendering /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/grape-swagger-rails-0.2.1/app/views/grape_swagger_rails/application/index.html.erb
+  Rendered /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/grape-swagger-rails-0.2.1/app/views/grape_swagger_rails/application/index.html.erb (65.8ms)
+Completed 200 OK in 85ms (Views: 77.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/swagger_doc" for ::1 at 2018-08-26 18:35:35 +0800
+Started GET "/api/v1/games?id=1" for ::1 at 2018-08-26 18:35:44 +0800
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "games" ("score_info", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["score_info", "{\"current_frame_no\":1,\"is_finished\":false,\"result\":0,\"pending_calculation\":[],\"frames\":{\"1\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"2\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"3\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"4\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"5\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"6\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"8\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["created_at", 2018-08-26 10:35:44 UTC], ["updated_at", 2018-08-26 10:35:44 UTC]]
+  [1m[35m (20.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/api/v1/games?id=2" for ::1 at 2018-08-26 18:36:02 +0800
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "games" ("score_info", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["score_info", "{\"current_frame_no\":1,\"is_finished\":false,\"result\":0,\"pending_calculation\":[],\"frames\":{\"1\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"2\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"3\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"4\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"5\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"6\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"8\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["created_at", 2018-08-26 10:36:02 UTC], ["updated_at", 2018-08-26 10:36:02 UTC]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/api/v1/games?id=2" for ::1 at 2018-08-26 18:36:03 +0800
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[32mINSERT INTO "games" ("score_info", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["score_info", "{\"current_frame_no\":1,\"is_finished\":false,\"result\":0,\"pending_calculation\":[],\"frames\":{\"1\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"2\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"3\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"4\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"5\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"6\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"8\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["created_at", 2018-08-26 10:36:03 UTC], ["updated_at", 2018-08-26 10:36:03 UTC]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/api/v1/games?id=2" for ::1 at 2018-08-26 18:36:04 +0800
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "games" ("score_info", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["score_info", "{\"current_frame_no\":1,\"is_finished\":false,\"result\":0,\"pending_calculation\":[],\"frames\":{\"1\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"2\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"3\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"4\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"5\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"6\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"8\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["created_at", 2018-08-26 10:36:04 UTC], ["updated_at", 2018-08-26 10:36:04 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/api/v1/games?id=2" for ::1 at 2018-08-26 18:36:04 +0800
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "games" ("score_info", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["score_info", "{\"current_frame_no\":1,\"is_finished\":false,\"result\":0,\"pending_calculation\":[],\"frames\":{\"1\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"2\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"3\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"4\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"5\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"6\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"8\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["created_at", 2018-08-26 10:36:04 UTC], ["updated_at", 2018-08-26 10:36:04 UTC]]
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/api/v1/games?id=2" for ::1 at 2018-08-26 18:36:05 +0800
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.6ms)[0m  [1m[32mINSERT INTO "games" ("score_info", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["score_info", "{\"current_frame_no\":1,\"is_finished\":false,\"result\":0,\"pending_calculation\":[],\"frames\":{\"1\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"2\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"3\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"4\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"5\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"6\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"8\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["created_at", 2018-08-26 10:36:05 UTC], ["updated_at", 2018-08-26 10:36:05 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/api/v1/games?id=2" for ::1 at 2018-08-26 18:36:05 +0800
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "games" ("score_info", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["score_info", "{\"current_frame_no\":1,\"is_finished\":false,\"result\":0,\"pending_calculation\":[],\"frames\":{\"1\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"2\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"3\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"4\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"5\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"6\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"8\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["created_at", 2018-08-26 10:36:05 UTC], ["updated_at", 2018-08-26 10:36:05 UTC]]
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/documentation" for ::1 at 2018-08-26 18:37:33 +0800
+
+SyntaxError - syntax error, unexpected ')', expecting ']':
+  app/controllers/api/v1/games.rb:20:in `'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:477:in `load'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:477:in `block in load_file'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:662:in `new_constants_in'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:476:in `load_file'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:375:in `block in require_or_load'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:37:in `block in load_interlock'
+  activesupport (5.0.0) lib/active_support/dependencies/interlock.rb:12:in `block in loading'
+  activesupport (5.0.0) lib/active_support/concurrency/share_lock.rb:117:in `exclusive'
+  activesupport (5.0.0) lib/active_support/dependencies/interlock.rb:11:in `loading'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:37:in `load_interlock'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:358:in `require_or_load'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:511:in `load_missing_constant'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:203:in `const_missing'
+  app/controllers/api/v1/base.rb:6:in `<class:Base>'
+  app/controllers/api/v1/base.rb:5:in `<module:V1>'
+  app/controllers/api/v1/base.rb:4:in `<module:API>'
+  app/controllers/api/v1/base.rb:3:in `<top (required)>'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:477:in `load'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:477:in `block in load_file'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:662:in `new_constants_in'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:476:in `load_file'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:375:in `block in require_or_load'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:37:in `block in load_interlock'
+  activesupport (5.0.0) lib/active_support/dependencies/interlock.rb:12:in `block in loading'
+  activesupport (5.0.0) lib/active_support/concurrency/share_lock.rb:117:in `exclusive'
+  activesupport (5.0.0) lib/active_support/dependencies/interlock.rb:11:in `loading'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:37:in `load_interlock'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:358:in `require_or_load'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:511:in `load_missing_constant'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:203:in `const_missing'
+  app/controllers/api/base.rb:3:in `<class:Base>'
+  app/controllers/api/base.rb:2:in `<module:API>'
+  app/controllers/api/base.rb:1:in `<top (required)>'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:477:in `load'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:477:in `block in load_file'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:662:in `new_constants_in'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:476:in `load_file'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:375:in `block in require_or_load'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:37:in `block in load_interlock'
+  activesupport (5.0.0) lib/active_support/dependencies/interlock.rb:12:in `block in loading'
+  activesupport (5.0.0) lib/active_support/concurrency/share_lock.rb:117:in `exclusive'
+  activesupport (5.0.0) lib/active_support/dependencies/interlock.rb:11:in `loading'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:37:in `load_interlock'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:358:in `require_or_load'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:511:in `load_missing_constant'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:203:in `const_missing'
+  config/routes.rb:2:in `block in <top (required)>'
+  actionpack (5.0.0) lib/action_dispatch/routing/route_set.rb:389:in `instance_exec'
+  actionpack (5.0.0) lib/action_dispatch/routing/route_set.rb:389:in `eval_block'
+  actionpack (5.0.0) lib/action_dispatch/routing/route_set.rb:371:in `draw'
+  config/routes.rb:1:in `<top (required)>'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:287:in `load'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:287:in `block in load'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:259:in `load_dependency'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:287:in `load'
+  railties (5.0.0) lib/rails/application/routes_reloader.rb:40:in `block in load_paths'
+  railties (5.0.0) lib/rails/application/routes_reloader.rb:40:in `each'
+  railties (5.0.0) lib/rails/application/routes_reloader.rb:40:in `load_paths'
+  railties (5.0.0) lib/rails/application/routes_reloader.rb:16:in `reload!'
+  railties (5.0.0) lib/rails/application/routes_reloader.rb:26:in `block in updater'
+  activesupport (5.0.0) lib/active_support/file_update_checker.rb:77:in `execute'
+  railties (5.0.0) lib/rails/application/routes_reloader.rb:7:in `execute'
+  railties (5.0.0) lib/rails/application/finisher.rb:132:in `block (2 levels) in <module:Finisher>'
+  activesupport (5.0.0) lib/active_support/callbacks.rb:396:in `instance_exec'
+  activesupport (5.0.0) lib/active_support/callbacks.rb:396:in `block in make_lambda'
+  activesupport (5.0.0) lib/active_support/callbacks.rb:169:in `block (2 levels) in halting'
+  activesupport (5.0.0) lib/active_support/callbacks.rb:547:in `block (2 levels) in default_terminator'
+  activesupport (5.0.0) lib/active_support/callbacks.rb:546:in `catch'
+  activesupport (5.0.0) lib/active_support/callbacks.rb:546:in `block in default_terminator'
+  activesupport (5.0.0) lib/active_support/callbacks.rb:170:in `block in halting'
+  activesupport (5.0.0) lib/active_support/callbacks.rb:454:in `block in call'
+  activesupport (5.0.0) lib/active_support/callbacks.rb:454:in `each'
+  activesupport (5.0.0) lib/active_support/callbacks.rb:454:in `call'
+  activesupport (5.0.0) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+  activesupport (5.0.0) lib/active_support/callbacks.rb:750:in `_run_run_callbacks'
+  activesupport (5.0.0) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  activesupport (5.0.0) lib/active_support/execution_wrapper.rb:99:in `run!'
+  activesupport (5.0.0) lib/active_support/reloader.rb:113:in `run!'
+  activesupport (5.0.0) lib/active_support/execution_wrapper.rb:61:in `block in run!'
+  activesupport (5.0.0) lib/active_support/execution_wrapper.rb:58:in `tap'
+  activesupport (5.0.0) lib/active_support/execution_wrapper.rb:58:in `run!'
+  activesupport (5.0.0) lib/active_support/reloader.rb:59:in `run!'
+  actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:10:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+  web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+  web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+  activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+  railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.0) lib/rails/engine.rb:522:in `call'
+  puma (3.4.0) lib/puma/configuration.rb:224:in `call'
+  puma (3.4.0) lib/puma/server.rb:569:in `handle_request'
+  puma (3.4.0) lib/puma/server.rb:406:in `process_client'
+  puma (3.4.0) lib/puma/server.rb:271:in `block in run'
+  puma (3.4.0) lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+
+Started POST "/__better_errors/232d2e8c1b594d9a/variables" for ::1 at 2018-08-26 18:37:33 +0800
+Started GET "/documentation" for ::1 at 2018-08-26 18:37:44 +0800
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block (2 levels) in <module:ClassMethods> at /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/abstract_controller/callbacks.rb:191)
+Processing by GrapeSwaggerRails::ApplicationController#index as HTML
+  Rendering /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/grape-swagger-rails-0.2.1/app/views/grape_swagger_rails/application/index.html.erb
+  Rendered /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/grape-swagger-rails-0.2.1/app/views/grape_swagger_rails/application/index.html.erb (66.2ms)
+Completed 200 OK in 87ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/grape_swagger_rails/jquery.slideto.min.self-4ac55a3315abf9efaddf5c91723409a73e4b3c1b070199a1cd2e1f20db687e48.js?body=1" for ::1 at 2018-08-26 18:37:45 +0800
+Started GET "/assets/grape_swagger_rails/jquery.wiggle.min.self-039164bf6151e8f188c754158b768f9c6c443d0b14126bec33eb509542058465.js?body=1" for ::1 at 2018-08-26 18:37:45 +0800
+Started GET "/assets/grape_swagger_rails/object-assign-pollyfill.self-256d4e60d3c9ddaa7b5b7b98ed858e69440c4f42588e44e3cc6e6e3917bacd9c.js?body=1" for ::1 at 2018-08-26 18:37:45 +0800
+Started GET "/assets/grape_swagger_rails/application.self-886760af898381620a8980841c646ae70e894b5292c3138e6dfd75b6904deffb.js?body=1" for ::1 at 2018-08-26 18:37:45 +0800
+Started GET "/api/v1/swagger_doc" for ::1 at 2018-08-26 18:37:45 +0800
+Started GET "/assets/grape_swagger_rails/throbber-8ee91ceb10dcdf1c87635ff1a1ebe25818612fd9a07cb2dfca79928c3b86d9dc.gif" for ::1 at 2018-08-26 18:37:45 +0800
+Started GET "/api/v1/games?id=1" for ::1 at 2018-08-26 18:37:49 +0800
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/api/v1/games?id=111" for ::1 at 2018-08-26 18:38:46 +0800
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 111], ["LIMIT", 1]]
+Started GET "/api/v1/games?id=dfsadf" for ::1 at 2018-08-26 18:39:01 +0800
+Started GET "/api/v1/games?id=dfsadf" for ::1 at 2018-08-26 18:39:03 +0800
+Started GET "/api/v1/games?id=dfsadf" for ::1 at 2018-08-26 18:39:10 +0800
+Started GET "/api/v1/games?id=3" for ::1 at 2018-08-26 18:39:23 +0800
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Started GET "/documentation" for ::1 at 2018-08-26 18:40:21 +0800
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block (2 levels) in <module:ClassMethods> at /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/abstract_controller/callbacks.rb:191)
+Processing by GrapeSwaggerRails::ApplicationController#index as HTML
+  Rendering /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/grape-swagger-rails-0.2.1/app/views/grape_swagger_rails/application/index.html.erb
+  Rendered /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/grape-swagger-rails-0.2.1/app/views/grape_swagger_rails/application/index.html.erb (78.5ms)
+Completed 200 OK in 99ms (Views: 90.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/swagger_doc" for ::1 at 2018-08-26 18:40:22 +0800
+Started GET "/api/v1/games/3" for ::1 at 2018-08-26 18:40:30 +0800
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Started GET "/documentation" for ::1 at 2018-08-26 18:40:54 +0800
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block (2 levels) in <module:ClassMethods> at /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/abstract_controller/callbacks.rb:191)
+Processing by GrapeSwaggerRails::ApplicationController#index as HTML
+  Rendering /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/grape-swagger-rails-0.2.1/app/views/grape_swagger_rails/application/index.html.erb
+  Rendered /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/grape-swagger-rails-0.2.1/app/views/grape_swagger_rails/application/index.html.erb (60.6ms)
+Completed 200 OK in 81ms (Views: 73.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/swagger_doc" for ::1 at 2018-08-26 18:40:54 +0800
+Started GET "/api/v1/games/4" for ::1 at 2018-08-26 18:41:00 +0800
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Started GET "/api/v1/games/44" for ::1 at 2018-08-26 18:41:07 +0800
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+Started GET "/api/v1/games/4" for ::1 at 2018-08-26 18:41:10 +0800
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Started GET "/documentation" for ::1 at 2018-08-27 17:06:53 +0800
 DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from raise_in_transactional_callbacks= at /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/activerecord-5.0.0/lib/active_record/transactions.rb:283)
   [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block (2 levels) in <module:ClassMethods> at /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/abstract_controller/callbacks.rb:191)
 Processing by GrapeSwaggerRails::ApplicationController#index as HTML
   Rendering /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/grape-swagger-rails-0.2.1/app/views/grape_swagger_rails/application/index.html.erb
-  Rendered /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/grape-swagger-rails-0.2.1/app/views/grape_swagger_rails/application/index.html.erb (468.0ms)
-Completed 200 OK in 514ms (Views: 492.9ms | ActiveRecord: 0.0ms)
+  Rendered /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/grape-swagger-rails-0.2.1/app/views/grape_swagger_rails/application/index.html.erb (632.8ms)
+Completed 200 OK in 691ms (Views: 665.3ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/api/v1/swagger_doc" for ::1 at 2018-08-27 13:51:16 +0800
-Started GET "/api/v1/games/list" for ::1 at 2018-08-27 13:51:22 +0800
-  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Started GET "/api/v1/swagger_doc" for ::1 at 2018-08-27 17:06:55 +0800

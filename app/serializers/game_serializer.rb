@@ -1,3 +1,3 @@
 class GameSerializer < ActiveModel::Serializer
-  attributes :player_name, :score_info
+  attributes :id, :player_name, :score_info
 end

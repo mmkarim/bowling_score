@@ -1,7 +1,7 @@
 require "rails_helper"
 
 describe Game do
-  subject { information }
+  subject { Game }
   it { should be_valid }
 
   let!(:game){FactoryGirl.create :game}
