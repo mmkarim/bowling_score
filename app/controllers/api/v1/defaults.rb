@@ -14,6 +14,10 @@ module API
           def permitted_params
             @permitted_params ||= declared(params, include_missing: false)
           end
+
+          def error_response msg = "Something went wrong.", code = 422
+            error!({error_code: code, error_message: msg}, code)
+          end
         end
 
         rescue_from ActiveRecord::RecordNotFound do |e|

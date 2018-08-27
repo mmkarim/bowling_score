@@ -599,14 +599,1043 @@ Started GET "/api/v1/games/44" for ::1 at 2018-08-26 18:41:07 +0800
   [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
 Started GET "/api/v1/games/4" for ::1 at 2018-08-26 18:41:10 +0800
   [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
-Started GET "/documentation" for ::1 at 2018-08-27 17:06:53 +0800
-DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from raise_in_transactional_callbacks= at /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/activerecord-5.0.0/lib/active_record/transactions.rb:283)
-  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/documentation" for ::1 at 2018-08-26 19:05:36 +0800
 DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block (2 levels) in <module:ClassMethods> at /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/abstract_controller/callbacks.rb:191)
 Processing by GrapeSwaggerRails::ApplicationController#index as HTML
   Rendering /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/grape-swagger-rails-0.2.1/app/views/grape_swagger_rails/application/index.html.erb
-  Rendered /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/grape-swagger-rails-0.2.1/app/views/grape_swagger_rails/application/index.html.erb (632.8ms)
-Completed 200 OK in 691ms (Views: 665.3ms | ActiveRecord: 0.0ms)
+  Rendered /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/grape-swagger-rails-0.2.1/app/views/grape_swagger_rails/application/index.html.erb (112.4ms)
+Completed 200 OK in 135ms (Views: 125.2ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/api/v1/swagger_doc" for ::1 at 2018-08-27 17:06:55 +0800
+Started GET "/api/v1/swagger_doc" for ::1 at 2018-08-26 19:05:36 +0800
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 19:05:55 +0800
+Started GET "/documentation" for ::1 at 2018-08-26 19:07:26 +0800
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block (2 levels) in <module:ClassMethods> at /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/abstract_controller/callbacks.rb:191)
+Processing by GrapeSwaggerRails::ApplicationController#index as HTML
+  Rendering /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/grape-swagger-rails-0.2.1/app/views/grape_swagger_rails/application/index.html.erb
+  Rendered /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/grape-swagger-rails-0.2.1/app/views/grape_swagger_rails/application/index.html.erb (35.5ms)
+Completed 200 OK in 52ms (Views: 46.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/swagger_doc" for ::1 at 2018-08-26 19:07:27 +0800
+Started GET "/documentation" for ::1 at 2018-08-26 19:08:18 +0800
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block (2 levels) in <module:ClassMethods> at /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/abstract_controller/callbacks.rb:191)
+Processing by GrapeSwaggerRails::ApplicationController#index as HTML
+  Rendering /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/grape-swagger-rails-0.2.1/app/views/grape_swagger_rails/application/index.html.erb
+  Rendered /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/grape-swagger-rails-0.2.1/app/views/grape_swagger_rails/application/index.html.erb (30.2ms)
+Completed 200 OK in 47ms (Views: 41.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/swagger_doc" for ::1 at 2018-08-26 19:08:19 +0800
+Started GET "/documentation" for ::1 at 2018-08-26 19:08:42 +0800
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block (2 levels) in <module:ClassMethods> at /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/abstract_controller/callbacks.rb:191)
+Processing by GrapeSwaggerRails::ApplicationController#index as HTML
+  Rendering /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/grape-swagger-rails-0.2.1/app/views/grape_swagger_rails/application/index.html.erb
+  Rendered /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/grape-swagger-rails-0.2.1/app/views/grape_swagger_rails/application/index.html.erb (37.2ms)
+Completed 200 OK in 53ms (Views: 48.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/swagger_doc" for ::1 at 2018-08-26 19:08:42 +0800
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 19:17:30 +0800
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+
+NameError - uninitialized constant Game::UpdateScore:
+  app/controllers/api/v1/games.rb:26:in `block (2 levels) in <class:Games>'
+  grape (0.13.0) lib/grape/endpoint.rb:51:in `call'
+  grape (0.13.0) lib/grape/endpoint.rb:51:in `block (2 levels) in generate_api_method'
+  activesupport (5.0.0) lib/active_support/notifications.rb:166:in `instrument'
+  grape (0.13.0) lib/grape/endpoint.rb:50:in `block in generate_api_method'
+  grape (0.13.0) lib/grape/endpoint.rb:254:in `block in run'
+  activesupport (5.0.0) lib/active_support/notifications.rb:166:in `instrument'
+  grape (0.13.0) lib/grape/endpoint.rb:219:in `run'
+  grape (0.13.0) lib/grape/endpoint.rb:201:in `block in call!'
+  grape (0.13.0) lib/grape/middleware/base.rb:24:in `call!'
+  grape (0.13.0) lib/grape/middleware/base.rb:18:in `call'
+  grape (0.13.0) lib/grape/middleware/base.rb:24:in `call!'
+  grape (0.13.0) lib/grape/middleware/base.rb:18:in `call'
+  grape (0.13.0) lib/grape/middleware/error.rb:27:in `block in call!'
+  grape (0.13.0) lib/grape/middleware/error.rb:26:in `catch'
+  grape (0.13.0) lib/grape/middleware/error.rb:26:in `call!'
+  grape (0.13.0) lib/grape/middleware/base.rb:18:in `call'
+  rack (2.0.1) lib/rack/head.rb:12:in `call'
+  rack (2.0.1) lib/rack/builder.rb:153:in `call'
+  grape (0.13.0) lib/grape/endpoint.rb:202:in `call!'
+  grape (0.13.0) lib/grape/endpoint.rb:190:in `call'
+  rack-mount (0.8.3) lib/rack/mount/route_set.rb:152:in `block in call'
+  rack-mount (0.8.3) lib/rack/mount/code_generation.rb:96:in `block in recognize'
+  rack-mount (0.8.3) lib/rack/mount/code_generation.rb:68:in `optimized_each'
+  rack-mount (0.8.3) lib/rack/mount/code_generation.rb:95:in `recognize'
+  rack-mount (0.8.3) lib/rack/mount/route_set.rb:141:in `call'
+  grape (0.13.0) lib/grape/api.rb:114:in `call'
+  grape (0.13.0) lib/grape/api.rb:44:in `call!'
+  grape (0.13.0) lib/grape/api.rb:39:in `call'
+  actionpack (5.0.0) lib/action_dispatch/routing/mapper.rb:17:in `block in <class:Constraints>'
+  actionpack (5.0.0) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+  actionpack (5.0.0) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.0) lib/action_dispatch/journey/router.rb:26:in `each'
+  actionpack (5.0.0) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.0) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  rack-cors (0.4.0) lib/rack/cors.rb:80:in `call'
+  rack (2.0.1) lib/rack/etag.rb:25:in `call'
+  rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+  rack (2.0.1) lib/rack/head.rb:12:in `call'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  activerecord (5.0.0) lib/active_record/migration.rb:552:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.0) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.0) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.0) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.0) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+  web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+  web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+  activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+  railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.0) lib/rails/engine.rb:522:in `call'
+  puma (3.4.0) lib/puma/configuration.rb:224:in `call'
+  puma (3.4.0) lib/puma/server.rb:569:in `handle_request'
+  puma (3.4.0) lib/puma/server.rb:406:in `process_client'
+  puma (3.4.0) lib/puma/server.rb:271:in `block in run'
+  puma (3.4.0) lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 19:17:55 +0800
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from raise_in_transactional_callbacks= at /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/activerecord-5.0.0/lib/active_record/transactions.rb:283)
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+
+SyntaxError - Can't assign to true
+    true, @game
+         ^
+/Users/apple/bowling_score_api/app/services/game/update_score.rb:11: syntax error, unexpected '\n', expecting '=':
+  app/services/game/update_score.rb:11:in `'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:477:in `load'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:477:in `block in load_file'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:662:in `new_constants_in'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:476:in `load_file'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:375:in `block in require_or_load'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:37:in `block in load_interlock'
+  activesupport (5.0.0) lib/active_support/dependencies/interlock.rb:12:in `block in loading'
+  activesupport (5.0.0) lib/active_support/concurrency/share_lock.rb:117:in `exclusive'
+  activesupport (5.0.0) lib/active_support/dependencies/interlock.rb:11:in `loading'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:37:in `load_interlock'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:358:in `require_or_load'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:511:in `load_missing_constant'
+  activesupport (5.0.0) lib/active_support/dependencies.rb:203:in `const_missing'
+  app/controllers/api/v1/games.rb:26:in `block (2 levels) in <class:Games>'
+  grape (0.13.0) lib/grape/endpoint.rb:51:in `call'
+  grape (0.13.0) lib/grape/endpoint.rb:51:in `block (2 levels) in generate_api_method'
+  activesupport (5.0.0) lib/active_support/notifications.rb:166:in `instrument'
+  grape (0.13.0) lib/grape/endpoint.rb:50:in `block in generate_api_method'
+  grape (0.13.0) lib/grape/endpoint.rb:254:in `block in run'
+  activesupport (5.0.0) lib/active_support/notifications.rb:166:in `instrument'
+  grape (0.13.0) lib/grape/endpoint.rb:219:in `run'
+  grape (0.13.0) lib/grape/endpoint.rb:201:in `block in call!'
+  grape (0.13.0) lib/grape/middleware/base.rb:24:in `call!'
+  grape (0.13.0) lib/grape/middleware/base.rb:18:in `call'
+  grape (0.13.0) lib/grape/middleware/base.rb:24:in `call!'
+  grape (0.13.0) lib/grape/middleware/base.rb:18:in `call'
+  grape (0.13.0) lib/grape/middleware/error.rb:27:in `block in call!'
+  grape (0.13.0) lib/grape/middleware/error.rb:26:in `catch'
+  grape (0.13.0) lib/grape/middleware/error.rb:26:in `call!'
+  grape (0.13.0) lib/grape/middleware/base.rb:18:in `call'
+  rack (2.0.1) lib/rack/head.rb:12:in `call'
+  rack (2.0.1) lib/rack/builder.rb:153:in `call'
+  grape (0.13.0) lib/grape/endpoint.rb:202:in `call!'
+  grape (0.13.0) lib/grape/endpoint.rb:190:in `call'
+  rack-mount (0.8.3) lib/rack/mount/route_set.rb:152:in `block in call'
+  rack-mount (0.8.3) lib/rack/mount/code_generation.rb:96:in `block in recognize'
+  rack-mount (0.8.3) lib/rack/mount/code_generation.rb:68:in `optimized_each'
+  rack-mount (0.8.3) lib/rack/mount/code_generation.rb:95:in `recognize'
+  rack-mount (0.8.3) lib/rack/mount/route_set.rb:141:in `call'
+  grape (0.13.0) lib/grape/api.rb:114:in `call'
+  grape (0.13.0) lib/grape/api.rb:44:in `call!'
+  grape (0.13.0) lib/grape/api.rb:39:in `call'
+  actionpack (5.0.0) lib/action_dispatch/routing/mapper.rb:17:in `block in <class:Constraints>'
+  actionpack (5.0.0) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+  actionpack (5.0.0) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.0) lib/action_dispatch/journey/router.rb:26:in `each'
+  actionpack (5.0.0) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.0) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  rack-cors (0.4.0) lib/rack/cors.rb:80:in `call'
+  rack (2.0.1) lib/rack/etag.rb:25:in `call'
+  rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+  rack (2.0.1) lib/rack/head.rb:12:in `call'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  activerecord (5.0.0) lib/active_record/migration.rb:552:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.0) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.0) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.0) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.0) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+  web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+  web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+  activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+  railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.0) lib/rails/engine.rb:522:in `call'
+  puma (3.4.0) lib/puma/configuration.rb:224:in `call'
+  puma (3.4.0) lib/puma/server.rb:569:in `handle_request'
+  puma (3.4.0) lib/puma/server.rb:406:in `process_client'
+  puma (3.4.0) lib/puma/server.rb:271:in `block in run'
+  puma (3.4.0) lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 19:19:02 +0800
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 19:19:36 +0800
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 19:20:36 +0800
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 19:20:38 +0800
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 19:20:38 +0800
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 19:20:40 +0800
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 19:21:39 +0800
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 19:21:40 +0800
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Started GET "/api/v1/games/4" for ::1 at 2018-08-26 19:28:37 +0800
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 19:29:40 +0800
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+
+NameError - undefined local variable or method `value' for #<Game::UpdateScore:0x007f8bd549cad8>
+Did you mean?  @value:
+  app/services/game/update_score.rb:21:in `error_check'
+  app/services/game/update_score.rb:11:in `update'
+  app/controllers/api/v1/games.rb:26:in `block (2 levels) in <class:Games>'
+  grape (0.13.0) lib/grape/endpoint.rb:51:in `call'
+  grape (0.13.0) lib/grape/endpoint.rb:51:in `block (2 levels) in generate_api_method'
+  activesupport (5.0.0) lib/active_support/notifications.rb:166:in `instrument'
+  grape (0.13.0) lib/grape/endpoint.rb:50:in `block in generate_api_method'
+  grape (0.13.0) lib/grape/endpoint.rb:254:in `block in run'
+  activesupport (5.0.0) lib/active_support/notifications.rb:166:in `instrument'
+  grape (0.13.0) lib/grape/endpoint.rb:219:in `run'
+  grape (0.13.0) lib/grape/endpoint.rb:201:in `block in call!'
+  grape (0.13.0) lib/grape/middleware/base.rb:24:in `call!'
+  grape (0.13.0) lib/grape/middleware/base.rb:18:in `call'
+  grape (0.13.0) lib/grape/middleware/base.rb:24:in `call!'
+  grape (0.13.0) lib/grape/middleware/base.rb:18:in `call'
+  grape (0.13.0) lib/grape/middleware/error.rb:27:in `block in call!'
+  grape (0.13.0) lib/grape/middleware/error.rb:26:in `catch'
+  grape (0.13.0) lib/grape/middleware/error.rb:26:in `call!'
+  grape (0.13.0) lib/grape/middleware/base.rb:18:in `call'
+  rack (2.0.1) lib/rack/head.rb:12:in `call'
+  rack (2.0.1) lib/rack/builder.rb:153:in `call'
+  grape (0.13.0) lib/grape/endpoint.rb:202:in `call!'
+  grape (0.13.0) lib/grape/endpoint.rb:190:in `call'
+  rack-mount (0.8.3) lib/rack/mount/route_set.rb:152:in `block in call'
+  rack-mount (0.8.3) lib/rack/mount/code_generation.rb:96:in `block in recognize'
+  rack-mount (0.8.3) lib/rack/mount/code_generation.rb:68:in `optimized_each'
+  rack-mount (0.8.3) lib/rack/mount/code_generation.rb:95:in `recognize'
+  rack-mount (0.8.3) lib/rack/mount/route_set.rb:141:in `call'
+  grape (0.13.0) lib/grape/api.rb:114:in `call'
+  grape (0.13.0) lib/grape/api.rb:44:in `call!'
+  grape (0.13.0) lib/grape/api.rb:39:in `call'
+  actionpack (5.0.0) lib/action_dispatch/routing/mapper.rb:17:in `block in <class:Constraints>'
+  actionpack (5.0.0) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+  actionpack (5.0.0) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.0) lib/action_dispatch/journey/router.rb:26:in `each'
+  actionpack (5.0.0) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.0) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  rack-cors (0.4.0) lib/rack/cors.rb:80:in `call'
+  rack (2.0.1) lib/rack/etag.rb:25:in `call'
+  rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+  rack (2.0.1) lib/rack/head.rb:12:in `call'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  activerecord (5.0.0) lib/active_record/migration.rb:552:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.0) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.0) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.0) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.0) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+  web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+  web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+  activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+  railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.0) lib/rails/engine.rb:522:in `call'
+  puma (3.4.0) lib/puma/configuration.rb:224:in `call'
+  puma (3.4.0) lib/puma/server.rb:569:in `handle_request'
+  puma (3.4.0) lib/puma/server.rb:406:in `process_client'
+  puma (3.4.0) lib/puma/server.rb:271:in `block in run'
+  puma (3.4.0) lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 19:29:51 +0800
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 19:31:28 +0800
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 19:31:42 +0800
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 19:36:16 +0800
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 19:36:22 +0800
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 19:36:42 +0800
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 19:39:33 +0800
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mGame Load (1.7ms)[0m  [1m[34mSELECT  "games".* FROM "games" ORDER BY "games"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/documentation" for ::1 at 2018-08-26 21:41:01 +0800
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block (2 levels) in <module:ClassMethods> at /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/abstract_controller/callbacks.rb:191)
+Processing by GrapeSwaggerRails::ApplicationController#index as HTML
+  Rendering /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/grape-swagger-rails-0.2.1/app/views/grape_swagger_rails/application/index.html.erb
+  Rendered /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/grape-swagger-rails-0.2.1/app/views/grape_swagger_rails/application/index.html.erb (562.0ms)
+Completed 200 OK in 617ms (Views: 588.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/swagger_doc" for ::1 at 2018-08-26 21:41:02 +0800
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 21:41:18 +0800
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+
+ArgumentError - wrong number of arguments (given 0, expected 1):
+  app/services/game/update_score.rb:35:in `add_score'
+  app/services/game/update_score.rb:14:in `update'
+  app/controllers/api/v1/games.rb:26:in `block (2 levels) in <class:Games>'
+  grape (0.13.0) lib/grape/endpoint.rb:51:in `call'
+  grape (0.13.0) lib/grape/endpoint.rb:51:in `block (2 levels) in generate_api_method'
+  activesupport (5.0.0) lib/active_support/notifications.rb:166:in `instrument'
+  grape (0.13.0) lib/grape/endpoint.rb:50:in `block in generate_api_method'
+  grape (0.13.0) lib/grape/endpoint.rb:254:in `block in run'
+  activesupport (5.0.0) lib/active_support/notifications.rb:166:in `instrument'
+  grape (0.13.0) lib/grape/endpoint.rb:219:in `run'
+  grape (0.13.0) lib/grape/endpoint.rb:201:in `block in call!'
+  grape (0.13.0) lib/grape/middleware/base.rb:24:in `call!'
+  grape (0.13.0) lib/grape/middleware/base.rb:18:in `call'
+  grape (0.13.0) lib/grape/middleware/base.rb:24:in `call!'
+  grape (0.13.0) lib/grape/middleware/base.rb:18:in `call'
+  grape (0.13.0) lib/grape/middleware/error.rb:27:in `block in call!'
+  grape (0.13.0) lib/grape/middleware/error.rb:26:in `catch'
+  grape (0.13.0) lib/grape/middleware/error.rb:26:in `call!'
+  grape (0.13.0) lib/grape/middleware/base.rb:18:in `call'
+  rack (2.0.1) lib/rack/head.rb:12:in `call'
+  rack (2.0.1) lib/rack/builder.rb:153:in `call'
+  grape (0.13.0) lib/grape/endpoint.rb:202:in `call!'
+  grape (0.13.0) lib/grape/endpoint.rb:190:in `call'
+  rack-mount (0.8.3) lib/rack/mount/route_set.rb:152:in `block in call'
+  rack-mount (0.8.3) lib/rack/mount/code_generation.rb:96:in `block in recognize'
+  rack-mount (0.8.3) lib/rack/mount/code_generation.rb:68:in `optimized_each'
+  rack-mount (0.8.3) lib/rack/mount/code_generation.rb:95:in `recognize'
+  rack-mount (0.8.3) lib/rack/mount/route_set.rb:141:in `call'
+  grape (0.13.0) lib/grape/api.rb:114:in `call'
+  grape (0.13.0) lib/grape/api.rb:44:in `call!'
+  grape (0.13.0) lib/grape/api.rb:39:in `call'
+  actionpack (5.0.0) lib/action_dispatch/routing/mapper.rb:17:in `block in <class:Constraints>'
+  actionpack (5.0.0) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+  actionpack (5.0.0) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.0) lib/action_dispatch/journey/router.rb:26:in `each'
+  actionpack (5.0.0) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.0) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  rack-cors (0.4.0) lib/rack/cors.rb:80:in `call'
+  rack (2.0.1) lib/rack/etag.rb:25:in `call'
+  rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+  rack (2.0.1) lib/rack/head.rb:12:in `call'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  activerecord (5.0.0) lib/active_record/migration.rb:552:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.0) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.0) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.0) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.0) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+  web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+  web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+  activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+  railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.0) lib/rails/engine.rb:522:in `call'
+  puma (3.4.0) lib/puma/configuration.rb:224:in `call'
+  puma (3.4.0) lib/puma/server.rb:569:in `handle_request'
+  puma (3.4.0) lib/puma/server.rb:406:in `process_client'
+  puma (3.4.0) lib/puma/server.rb:271:in `block in run'
+  puma (3.4.0) lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 21:42:54 +0800
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+
+NoMethodError - undefined method `[]' for nil:NilClass:
+  app/services/game/update_score.rb:37:in `add_score'
+  app/services/game/update_score.rb:14:in `update'
+  app/controllers/api/v1/games.rb:26:in `block (2 levels) in <class:Games>'
+  grape (0.13.0) lib/grape/endpoint.rb:51:in `call'
+  grape (0.13.0) lib/grape/endpoint.rb:51:in `block (2 levels) in generate_api_method'
+  activesupport (5.0.0) lib/active_support/notifications.rb:166:in `instrument'
+  grape (0.13.0) lib/grape/endpoint.rb:50:in `block in generate_api_method'
+  grape (0.13.0) lib/grape/endpoint.rb:254:in `block in run'
+  activesupport (5.0.0) lib/active_support/notifications.rb:166:in `instrument'
+  grape (0.13.0) lib/grape/endpoint.rb:219:in `run'
+  grape (0.13.0) lib/grape/endpoint.rb:201:in `block in call!'
+  grape (0.13.0) lib/grape/middleware/base.rb:24:in `call!'
+  grape (0.13.0) lib/grape/middleware/base.rb:18:in `call'
+  grape (0.13.0) lib/grape/middleware/base.rb:24:in `call!'
+  grape (0.13.0) lib/grape/middleware/base.rb:18:in `call'
+  grape (0.13.0) lib/grape/middleware/error.rb:27:in `block in call!'
+  grape (0.13.0) lib/grape/middleware/error.rb:26:in `catch'
+  grape (0.13.0) lib/grape/middleware/error.rb:26:in `call!'
+  grape (0.13.0) lib/grape/middleware/base.rb:18:in `call'
+  rack (2.0.1) lib/rack/head.rb:12:in `call'
+  rack (2.0.1) lib/rack/builder.rb:153:in `call'
+  grape (0.13.0) lib/grape/endpoint.rb:202:in `call!'
+  grape (0.13.0) lib/grape/endpoint.rb:190:in `call'
+  rack-mount (0.8.3) lib/rack/mount/route_set.rb:152:in `block in call'
+  rack-mount (0.8.3) lib/rack/mount/code_generation.rb:96:in `block in recognize'
+  rack-mount (0.8.3) lib/rack/mount/code_generation.rb:68:in `optimized_each'
+  rack-mount (0.8.3) lib/rack/mount/code_generation.rb:95:in `recognize'
+  rack-mount (0.8.3) lib/rack/mount/route_set.rb:141:in `call'
+  grape (0.13.0) lib/grape/api.rb:114:in `call'
+  grape (0.13.0) lib/grape/api.rb:44:in `call!'
+  grape (0.13.0) lib/grape/api.rb:39:in `call'
+  actionpack (5.0.0) lib/action_dispatch/routing/mapper.rb:17:in `block in <class:Constraints>'
+  actionpack (5.0.0) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+  actionpack (5.0.0) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.0) lib/action_dispatch/journey/router.rb:26:in `each'
+  actionpack (5.0.0) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.0) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  rack-cors (0.4.0) lib/rack/cors.rb:80:in `call'
+  rack (2.0.1) lib/rack/etag.rb:25:in `call'
+  rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+  rack (2.0.1) lib/rack/head.rb:12:in `call'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  activerecord (5.0.0) lib/active_record/migration.rb:552:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.0) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.0) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.0) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.0) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+  web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+  web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+  activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+  railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.0) lib/rails/engine.rb:522:in `call'
+  puma (3.4.0) lib/puma/configuration.rb:224:in `call'
+  puma (3.4.0) lib/puma/server.rb:569:in `handle_request'
+  puma (3.4.0) lib/puma/server.rb:406:in `process_client'
+  puma (3.4.0) lib/puma/server.rb:271:in `block in run'
+  puma (3.4.0) lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 21:44:00 +0800
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+
+NoMethodError - undefined method `[]' for nil:NilClass:
+  app/services/game/update_score.rb:38:in `add_score'
+  app/services/game/update_score.rb:14:in `update'
+  app/controllers/api/v1/games.rb:26:in `block (2 levels) in <class:Games>'
+  grape (0.13.0) lib/grape/endpoint.rb:51:in `call'
+  grape (0.13.0) lib/grape/endpoint.rb:51:in `block (2 levels) in generate_api_method'
+  activesupport (5.0.0) lib/active_support/notifications.rb:166:in `instrument'
+  grape (0.13.0) lib/grape/endpoint.rb:50:in `block in generate_api_method'
+  grape (0.13.0) lib/grape/endpoint.rb:254:in `block in run'
+  activesupport (5.0.0) lib/active_support/notifications.rb:166:in `instrument'
+  grape (0.13.0) lib/grape/endpoint.rb:219:in `run'
+  grape (0.13.0) lib/grape/endpoint.rb:201:in `block in call!'
+  grape (0.13.0) lib/grape/middleware/base.rb:24:in `call!'
+  grape (0.13.0) lib/grape/middleware/base.rb:18:in `call'
+  grape (0.13.0) lib/grape/middleware/base.rb:24:in `call!'
+  grape (0.13.0) lib/grape/middleware/base.rb:18:in `call'
+  grape (0.13.0) lib/grape/middleware/error.rb:27:in `block in call!'
+  grape (0.13.0) lib/grape/middleware/error.rb:26:in `catch'
+  grape (0.13.0) lib/grape/middleware/error.rb:26:in `call!'
+  grape (0.13.0) lib/grape/middleware/base.rb:18:in `call'
+  rack (2.0.1) lib/rack/head.rb:12:in `call'
+  rack (2.0.1) lib/rack/builder.rb:153:in `call'
+  grape (0.13.0) lib/grape/endpoint.rb:202:in `call!'
+  grape (0.13.0) lib/grape/endpoint.rb:190:in `call'
+  rack-mount (0.8.3) lib/rack/mount/route_set.rb:152:in `block in call'
+  rack-mount (0.8.3) lib/rack/mount/code_generation.rb:96:in `block in recognize'
+  rack-mount (0.8.3) lib/rack/mount/code_generation.rb:68:in `optimized_each'
+  rack-mount (0.8.3) lib/rack/mount/code_generation.rb:95:in `recognize'
+  rack-mount (0.8.3) lib/rack/mount/route_set.rb:141:in `call'
+  grape (0.13.0) lib/grape/api.rb:114:in `call'
+  grape (0.13.0) lib/grape/api.rb:44:in `call!'
+  grape (0.13.0) lib/grape/api.rb:39:in `call'
+  actionpack (5.0.0) lib/action_dispatch/routing/mapper.rb:17:in `block in <class:Constraints>'
+  actionpack (5.0.0) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+  actionpack (5.0.0) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.0) lib/action_dispatch/journey/router.rb:26:in `each'
+  actionpack (5.0.0) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.0) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  rack-cors (0.4.0) lib/rack/cors.rb:80:in `call'
+  rack (2.0.1) lib/rack/etag.rb:25:in `call'
+  rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+  rack (2.0.1) lib/rack/head.rb:12:in `call'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  activerecord (5.0.0) lib/active_record/migration.rb:552:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.0) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.0) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.0) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.0) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+  web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+  web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+  activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+  railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.0) lib/rails/engine.rb:522:in `call'
+  puma (3.4.0) lib/puma/configuration.rb:224:in `call'
+  puma (3.4.0) lib/puma/server.rb:569:in `handle_request'
+  puma (3.4.0) lib/puma/server.rb:406:in `process_client'
+  puma (3.4.0) lib/puma/server.rb:271:in `block in run'
+  puma (3.4.0) lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 21:51:27 +0800
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+
+NoMethodError - undefined method `[]' for nil:NilClass:
+  app/services/game/update_score.rb:40:in `add_score'
+  app/services/game/update_score.rb:14:in `update'
+  app/controllers/api/v1/games.rb:26:in `block (2 levels) in <class:Games>'
+  grape (0.13.0) lib/grape/endpoint.rb:51:in `call'
+  grape (0.13.0) lib/grape/endpoint.rb:51:in `block (2 levels) in generate_api_method'
+  activesupport (5.0.0) lib/active_support/notifications.rb:166:in `instrument'
+  grape (0.13.0) lib/grape/endpoint.rb:50:in `block in generate_api_method'
+  grape (0.13.0) lib/grape/endpoint.rb:254:in `block in run'
+  activesupport (5.0.0) lib/active_support/notifications.rb:166:in `instrument'
+  grape (0.13.0) lib/grape/endpoint.rb:219:in `run'
+  grape (0.13.0) lib/grape/endpoint.rb:201:in `block in call!'
+  grape (0.13.0) lib/grape/middleware/base.rb:24:in `call!'
+  grape (0.13.0) lib/grape/middleware/base.rb:18:in `call'
+  grape (0.13.0) lib/grape/middleware/base.rb:24:in `call!'
+  grape (0.13.0) lib/grape/middleware/base.rb:18:in `call'
+  grape (0.13.0) lib/grape/middleware/error.rb:27:in `block in call!'
+  grape (0.13.0) lib/grape/middleware/error.rb:26:in `catch'
+  grape (0.13.0) lib/grape/middleware/error.rb:26:in `call!'
+  grape (0.13.0) lib/grape/middleware/base.rb:18:in `call'
+  rack (2.0.1) lib/rack/head.rb:12:in `call'
+  rack (2.0.1) lib/rack/builder.rb:153:in `call'
+  grape (0.13.0) lib/grape/endpoint.rb:202:in `call!'
+  grape (0.13.0) lib/grape/endpoint.rb:190:in `call'
+  rack-mount (0.8.3) lib/rack/mount/route_set.rb:152:in `block in call'
+  rack-mount (0.8.3) lib/rack/mount/code_generation.rb:96:in `block in recognize'
+  rack-mount (0.8.3) lib/rack/mount/code_generation.rb:68:in `optimized_each'
+  rack-mount (0.8.3) lib/rack/mount/code_generation.rb:95:in `recognize'
+  rack-mount (0.8.3) lib/rack/mount/route_set.rb:141:in `call'
+  grape (0.13.0) lib/grape/api.rb:114:in `call'
+  grape (0.13.0) lib/grape/api.rb:44:in `call!'
+  grape (0.13.0) lib/grape/api.rb:39:in `call'
+  actionpack (5.0.0) lib/action_dispatch/routing/mapper.rb:17:in `block in <class:Constraints>'
+  actionpack (5.0.0) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+  actionpack (5.0.0) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.0) lib/action_dispatch/journey/router.rb:26:in `each'
+  actionpack (5.0.0) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.0) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  rack-cors (0.4.0) lib/rack/cors.rb:80:in `call'
+  rack (2.0.1) lib/rack/etag.rb:25:in `call'
+  rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+  rack (2.0.1) lib/rack/head.rb:12:in `call'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  activerecord (5.0.0) lib/active_record/migration.rb:552:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.0) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.0) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.0) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.0) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+  web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+  web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+  activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+  railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.0) lib/rails/engine.rb:522:in `call'
+  puma (3.4.0) lib/puma/configuration.rb:224:in `call'
+  puma (3.4.0) lib/puma/server.rb:569:in `handle_request'
+  puma (3.4.0) lib/puma/server.rb:406:in `process_client'
+  puma (3.4.0) lib/puma/server.rb:271:in `block in run'
+  puma (3.4.0) lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 21:52:27 +0800
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+
+NoMethodError - undefined method `[]' for nil:NilClass:
+  app/services/game/update_score.rb:40:in `add_score'
+  app/services/game/update_score.rb:14:in `update'
+  app/controllers/api/v1/games.rb:26:in `block (2 levels) in <class:Games>'
+  grape (0.13.0) lib/grape/endpoint.rb:51:in `call'
+  grape (0.13.0) lib/grape/endpoint.rb:51:in `block (2 levels) in generate_api_method'
+  activesupport (5.0.0) lib/active_support/notifications.rb:166:in `instrument'
+  grape (0.13.0) lib/grape/endpoint.rb:50:in `block in generate_api_method'
+  grape (0.13.0) lib/grape/endpoint.rb:254:in `block in run'
+  activesupport (5.0.0) lib/active_support/notifications.rb:166:in `instrument'
+  grape (0.13.0) lib/grape/endpoint.rb:219:in `run'
+  grape (0.13.0) lib/grape/endpoint.rb:201:in `block in call!'
+  grape (0.13.0) lib/grape/middleware/base.rb:24:in `call!'
+  grape (0.13.0) lib/grape/middleware/base.rb:18:in `call'
+  grape (0.13.0) lib/grape/middleware/base.rb:24:in `call!'
+  grape (0.13.0) lib/grape/middleware/base.rb:18:in `call'
+  grape (0.13.0) lib/grape/middleware/error.rb:27:in `block in call!'
+  grape (0.13.0) lib/grape/middleware/error.rb:26:in `catch'
+  grape (0.13.0) lib/grape/middleware/error.rb:26:in `call!'
+  grape (0.13.0) lib/grape/middleware/base.rb:18:in `call'
+  rack (2.0.1) lib/rack/head.rb:12:in `call'
+  rack (2.0.1) lib/rack/builder.rb:153:in `call'
+  grape (0.13.0) lib/grape/endpoint.rb:202:in `call!'
+  grape (0.13.0) lib/grape/endpoint.rb:190:in `call'
+  rack-mount (0.8.3) lib/rack/mount/route_set.rb:152:in `block in call'
+  rack-mount (0.8.3) lib/rack/mount/code_generation.rb:96:in `block in recognize'
+  rack-mount (0.8.3) lib/rack/mount/code_generation.rb:68:in `optimized_each'
+  rack-mount (0.8.3) lib/rack/mount/code_generation.rb:95:in `recognize'
+  rack-mount (0.8.3) lib/rack/mount/route_set.rb:141:in `call'
+  grape (0.13.0) lib/grape/api.rb:114:in `call'
+  grape (0.13.0) lib/grape/api.rb:44:in `call!'
+  grape (0.13.0) lib/grape/api.rb:39:in `call'
+  actionpack (5.0.0) lib/action_dispatch/routing/mapper.rb:17:in `block in <class:Constraints>'
+  actionpack (5.0.0) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+  actionpack (5.0.0) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.0) lib/action_dispatch/journey/router.rb:26:in `each'
+  actionpack (5.0.0) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.0) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  rack-cors (0.4.0) lib/rack/cors.rb:80:in `call'
+  rack (2.0.1) lib/rack/etag.rb:25:in `call'
+  rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+  rack (2.0.1) lib/rack/head.rb:12:in `call'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  activerecord (5.0.0) lib/active_record/migration.rb:552:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.0) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.0) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.0) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.0) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+  web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+  web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+  activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+  railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.0) lib/rails/engine.rb:522:in `call'
+  puma (3.4.0) lib/puma/configuration.rb:224:in `call'
+  puma (3.4.0) lib/puma/server.rb:569:in `handle_request'
+  puma (3.4.0) lib/puma/server.rb:406:in `process_client'
+  puma (3.4.0) lib/puma/server.rb:271:in `block in run'
+  puma (3.4.0) lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 22:07:59 +0800
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (3.0ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":1,\"is_finished\":false,\"result\":0,\"pending_calculation\":[],\"frames\":{\"1\":{\"throw_1\":1,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"2\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"3\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"4\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"5\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"6\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"8\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:08:55 UTC], ["id", 4]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 22:10:12 +0800
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":2,\"is_finished\":false,\"result\":0,\"pending_calculation\":[1],\"frames\":{\"1\":{\"throw_1\":1,\"throw_2\":9,\"score\":null,\"is_strike\":false,\"is_spare\":true},\"2\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"3\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"4\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"5\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"6\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"8\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:10:12 UTC], ["id", 4]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 22:10:59 +0800
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":3,\"is_finished\":false,\"result\":20,\"pending_calculation\":[2],\"frames\":{\"1\":{\"throw_1\":1,\"throw_2\":9,\"score\":20,\"is_strike\":false,\"is_spare\":true},\"2\":{\"throw_1\":10,\"throw_2\":null,\"score\":null,\"is_strike\":true,\"is_spare\":false},\"3\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"4\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"5\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"6\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"8\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:10:59 UTC], ["id", 4]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 22:11:13 +0800
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":4,\"is_finished\":false,\"result\":20,\"pending_calculation\":[2,3],\"frames\":{\"1\":{\"throw_1\":1,\"throw_2\":9,\"score\":20,\"is_strike\":false,\"is_spare\":true},\"2\":{\"throw_1\":10,\"throw_2\":null,\"score\":null,\"is_strike\":true,\"is_spare\":false},\"3\":{\"throw_1\":10,\"throw_2\":null,\"score\":null,\"is_strike\":true,\"is_spare\":false},\"4\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"5\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"6\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"8\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:11:13 UTC], ["id", 4]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 22:11:14 +0800
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":5,\"is_finished\":false,\"result\":50,\"pending_calculation\":[3,4],\"frames\":{\"1\":{\"throw_1\":1,\"throw_2\":9,\"score\":20,\"is_strike\":false,\"is_spare\":true},\"2\":{\"throw_1\":10,\"throw_2\":null,\"score\":50,\"is_strike\":true,\"is_spare\":false},\"3\":{\"throw_1\":10,\"throw_2\":null,\"score\":null,\"is_strike\":true,\"is_spare\":false},\"4\":{\"throw_1\":10,\"throw_2\":null,\"score\":null,\"is_strike\":true,\"is_spare\":false},\"5\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"6\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"8\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:11:14 UTC], ["id", 4]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 22:11:15 +0800
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":6,\"is_finished\":false,\"result\":80,\"pending_calculation\":[4,5],\"frames\":{\"1\":{\"throw_1\":1,\"throw_2\":9,\"score\":20,\"is_strike\":false,\"is_spare\":true},\"2\":{\"throw_1\":10,\"throw_2\":null,\"score\":50,\"is_strike\":true,\"is_spare\":false},\"3\":{\"throw_1\":10,\"throw_2\":null,\"score\":80,\"is_strike\":true,\"is_spare\":false},\"4\":{\"throw_1\":10,\"throw_2\":null,\"score\":null,\"is_strike\":true,\"is_spare\":false},\"5\":{\"throw_1\":10,\"throw_2\":null,\"score\":null,\"is_strike\":true,\"is_spare\":false},\"6\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"8\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:11:15 UTC], ["id", 4]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 22:11:19 +0800
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":7,\"is_finished\":false,\"result\":110,\"pending_calculation\":[5,6],\"frames\":{\"1\":{\"throw_1\":1,\"throw_2\":9,\"score\":20,\"is_strike\":false,\"is_spare\":true},\"2\":{\"throw_1\":10,\"throw_2\":null,\"score\":50,\"is_strike\":true,\"is_spare\":false},\"3\":{\"throw_1\":10,\"throw_2\":null,\"score\":80,\"is_strike\":true,\"is_spare\":false},\"4\":{\"throw_1\":10,\"throw_2\":null,\"score\":110,\"is_strike\":true,\"is_spare\":false},\"5\":{\"throw_1\":10,\"throw_2\":null,\"score\":null,\"is_strike\":true,\"is_spare\":false},\"6\":{\"throw_1\":10,\"throw_2\":null,\"score\":null,\"is_strike\":true,\"is_spare\":false},\"7\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"8\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:11:19 UTC], ["id", 4]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 22:11:21 +0800
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":8,\"is_finished\":false,\"result\":140,\"pending_calculation\":[6,7],\"frames\":{\"1\":{\"throw_1\":1,\"throw_2\":9,\"score\":20,\"is_strike\":false,\"is_spare\":true},\"2\":{\"throw_1\":10,\"throw_2\":null,\"score\":50,\"is_strike\":true,\"is_spare\":false},\"3\":{\"throw_1\":10,\"throw_2\":null,\"score\":80,\"is_strike\":true,\"is_spare\":false},\"4\":{\"throw_1\":10,\"throw_2\":null,\"score\":110,\"is_strike\":true,\"is_spare\":false},\"5\":{\"throw_1\":10,\"throw_2\":null,\"score\":140,\"is_strike\":true,\"is_spare\":false},\"6\":{\"throw_1\":10,\"throw_2\":null,\"score\":null,\"is_strike\":true,\"is_spare\":false},\"7\":{\"throw_1\":10,\"throw_2\":null,\"score\":null,\"is_strike\":true,\"is_spare\":false},\"8\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:11:21 UTC], ["id", 4]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 22:11:22 +0800
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":9,\"is_finished\":false,\"result\":170,\"pending_calculation\":[7,8],\"frames\":{\"1\":{\"throw_1\":1,\"throw_2\":9,\"score\":20,\"is_strike\":false,\"is_spare\":true},\"2\":{\"throw_1\":10,\"throw_2\":null,\"score\":50,\"is_strike\":true,\"is_spare\":false},\"3\":{\"throw_1\":10,\"throw_2\":null,\"score\":80,\"is_strike\":true,\"is_spare\":false},\"4\":{\"throw_1\":10,\"throw_2\":null,\"score\":110,\"is_strike\":true,\"is_spare\":false},\"5\":{\"throw_1\":10,\"throw_2\":null,\"score\":140,\"is_strike\":true,\"is_spare\":false},\"6\":{\"throw_1\":10,\"throw_2\":null,\"score\":170,\"is_strike\":true,\"is_spare\":false},\"7\":{\"throw_1\":10,\"throw_2\":null,\"score\":null,\"is_strike\":true,\"is_spare\":false},\"8\":{\"throw_1\":10,\"throw_2\":null,\"score\":null,\"is_strike\":true,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:11:22 UTC], ["id", 4]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 22:11:24 +0800
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":10,\"is_finished\":false,\"result\":200,\"pending_calculation\":[8,9],\"frames\":{\"1\":{\"throw_1\":1,\"throw_2\":9,\"score\":20,\"is_strike\":false,\"is_spare\":true},\"2\":{\"throw_1\":10,\"throw_2\":null,\"score\":50,\"is_strike\":true,\"is_spare\":false},\"3\":{\"throw_1\":10,\"throw_2\":null,\"score\":80,\"is_strike\":true,\"is_spare\":false},\"4\":{\"throw_1\":10,\"throw_2\":null,\"score\":110,\"is_strike\":true,\"is_spare\":false},\"5\":{\"throw_1\":10,\"throw_2\":null,\"score\":140,\"is_strike\":true,\"is_spare\":false},\"6\":{\"throw_1\":10,\"throw_2\":null,\"score\":170,\"is_strike\":true,\"is_spare\":false},\"7\":{\"throw_1\":10,\"throw_2\":null,\"score\":200,\"is_strike\":true,\"is_spare\":false},\"8\":{\"throw_1\":10,\"throw_2\":null,\"score\":null,\"is_strike\":true,\"is_spare\":false},\"9\":{\"throw_1\":10,\"throw_2\":null,\"score\":null,\"is_strike\":true,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:11:24 UTC], ["id", 4]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 22:11:33 +0800
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":10,\"is_finished\":false,\"result\":230,\"pending_calculation\":[9],\"frames\":{\"1\":{\"throw_1\":1,\"throw_2\":9,\"score\":20,\"is_strike\":false,\"is_spare\":true},\"2\":{\"throw_1\":10,\"throw_2\":null,\"score\":50,\"is_strike\":true,\"is_spare\":false},\"3\":{\"throw_1\":10,\"throw_2\":null,\"score\":80,\"is_strike\":true,\"is_spare\":false},\"4\":{\"throw_1\":10,\"throw_2\":null,\"score\":110,\"is_strike\":true,\"is_spare\":false},\"5\":{\"throw_1\":10,\"throw_2\":null,\"score\":140,\"is_strike\":true,\"is_spare\":false},\"6\":{\"throw_1\":10,\"throw_2\":null,\"score\":170,\"is_strike\":true,\"is_spare\":false},\"7\":{\"throw_1\":10,\"throw_2\":null,\"score\":200,\"is_strike\":true,\"is_spare\":false},\"8\":{\"throw_1\":10,\"throw_2\":null,\"score\":230,\"is_strike\":true,\"is_spare\":false},\"9\":{\"throw_1\":10,\"throw_2\":null,\"score\":null,\"is_strike\":true,\"is_spare\":false},\"10\":{\"throw_1\":10,\"throw_2\":null,\"score\":null,\"is_strike\":true,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:11:33 UTC], ["id", 4]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 22:11:34 +0800
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 22:11:38 +0800
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 22:11:41 +0800
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 22:13:10 +0800
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 22:15:27 +0800
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":10,\"is_finished\":false,\"result\":260,\"pending_calculation\":[],\"frames\":{\"1\":{\"throw_1\":1,\"throw_2\":9,\"score\":20,\"is_strike\":false,\"is_spare\":true},\"2\":{\"throw_1\":10,\"throw_2\":null,\"score\":50,\"is_strike\":true,\"is_spare\":false},\"3\":{\"throw_1\":10,\"throw_2\":null,\"score\":80,\"is_strike\":true,\"is_spare\":false},\"4\":{\"throw_1\":10,\"throw_2\":null,\"score\":110,\"is_strike\":true,\"is_spare\":false},\"5\":{\"throw_1\":10,\"throw_2\":null,\"score\":140,\"is_strike\":true,\"is_spare\":false},\"6\":{\"throw_1\":10,\"throw_2\":null,\"score\":170,\"is_strike\":true,\"is_spare\":false},\"7\":{\"throw_1\":10,\"throw_2\":null,\"score\":200,\"is_strike\":true,\"is_spare\":false},\"8\":{\"throw_1\":10,\"throw_2\":null,\"score\":230,\"is_strike\":true,\"is_spare\":false},\"9\":{\"throw_1\":10,\"throw_2\":null,\"score\":260,\"is_strike\":true,\"is_spare\":false},\"10\":{\"throw_1\":10,\"throw_2\":10,\"score\":null,\"is_strike\":true,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:15:27 UTC], ["id", 4]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 22:15:38 +0800
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":10,\"is_finished\":true,\"result\":290,\"pending_calculation\":[],\"frames\":{\"1\":{\"throw_1\":1,\"throw_2\":9,\"score\":20,\"is_strike\":false,\"is_spare\":true},\"2\":{\"throw_1\":10,\"throw_2\":null,\"score\":50,\"is_strike\":true,\"is_spare\":false},\"3\":{\"throw_1\":10,\"throw_2\":null,\"score\":80,\"is_strike\":true,\"is_spare\":false},\"4\":{\"throw_1\":10,\"throw_2\":null,\"score\":110,\"is_strike\":true,\"is_spare\":false},\"5\":{\"throw_1\":10,\"throw_2\":null,\"score\":140,\"is_strike\":true,\"is_spare\":false},\"6\":{\"throw_1\":10,\"throw_2\":null,\"score\":170,\"is_strike\":true,\"is_spare\":false},\"7\":{\"throw_1\":10,\"throw_2\":null,\"score\":200,\"is_strike\":true,\"is_spare\":false},\"8\":{\"throw_1\":10,\"throw_2\":null,\"score\":230,\"is_strike\":true,\"is_spare\":false},\"9\":{\"throw_1\":10,\"throw_2\":null,\"score\":260,\"is_strike\":true,\"is_spare\":false},\"10\":{\"throw_1\":10,\"throw_2\":10,\"score\":290,\"is_strike\":true,\"is_spare\":false,\"bonus\":10}}}"], ["updated_at", 2018-08-26 14:15:38 UTC], ["id", 4]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/4/add_score" for ::1 at 2018-08-26 22:18:07 +0800
+  [1m[36mGame Load (1.1ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Started GET "/api/v1/games/4" for ::1 at 2018-08-26 22:18:25 +0800
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Started PUT "/api/v1/games/5/add_score" for ::1 at 2018-08-26 22:33:16 +0800
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (6.2ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":2,\"is_finished\":false,\"result\":0,\"pending_calculation\":[1],\"frames\":{\"1\":{\"throw_1\":10,\"throw_2\":null,\"score\":null,\"is_strike\":true,\"is_spare\":false},\"2\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"3\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"4\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"5\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"6\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"8\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:33:16 UTC], ["id", 5]]
+  [1m[35m (7.5ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/5/add_score" for ::1 at 2018-08-26 22:33:31 +0800
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":2,\"is_finished\":false,\"result\":0,\"pending_calculation\":[1],\"frames\":{\"1\":{\"throw_1\":10,\"throw_2\":null,\"score\":null,\"is_strike\":true,\"is_spare\":false},\"2\":{\"throw_1\":5,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"3\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"4\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"5\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"6\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"8\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:33:32 UTC], ["id", 5]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/5/add_score" for ::1 at 2018-08-26 22:33:32 +0800
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":3,\"is_finished\":false,\"result\":20,\"pending_calculation\":[2],\"frames\":{\"1\":{\"throw_1\":10,\"throw_2\":null,\"score\":20,\"is_strike\":true,\"is_spare\":false},\"2\":{\"throw_1\":5,\"throw_2\":5,\"score\":null,\"is_strike\":false,\"is_spare\":true},\"3\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"4\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"5\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"6\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"8\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:33:32 UTC], ["id", 5]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/5/add_score" for ::1 at 2018-08-26 22:33:36 +0800
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":4,\"is_finished\":false,\"result\":40,\"pending_calculation\":[3],\"frames\":{\"1\":{\"throw_1\":10,\"throw_2\":null,\"score\":20,\"is_strike\":true,\"is_spare\":false},\"2\":{\"throw_1\":5,\"throw_2\":5,\"score\":40,\"is_strike\":false,\"is_spare\":true},\"3\":{\"throw_1\":10,\"throw_2\":null,\"score\":null,\"is_strike\":true,\"is_spare\":false},\"4\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"5\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"6\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"8\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:33:36 UTC], ["id", 5]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/5/add_score" for ::1 at 2018-08-26 22:33:36 +0800
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":5,\"is_finished\":false,\"result\":40,\"pending_calculation\":[3,4],\"frames\":{\"1\":{\"throw_1\":10,\"throw_2\":null,\"score\":20,\"is_strike\":true,\"is_spare\":false},\"2\":{\"throw_1\":5,\"throw_2\":5,\"score\":40,\"is_strike\":false,\"is_spare\":true},\"3\":{\"throw_1\":10,\"throw_2\":null,\"score\":null,\"is_strike\":true,\"is_spare\":false},\"4\":{\"throw_1\":10,\"throw_2\":null,\"score\":null,\"is_strike\":true,\"is_spare\":false},\"5\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"6\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"8\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:33:36 UTC], ["id", 5]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/5/add_score" for ::1 at 2018-08-26 22:33:37 +0800
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":6,\"is_finished\":false,\"result\":70,\"pending_calculation\":[4,5],\"frames\":{\"1\":{\"throw_1\":10,\"throw_2\":null,\"score\":20,\"is_strike\":true,\"is_spare\":false},\"2\":{\"throw_1\":5,\"throw_2\":5,\"score\":40,\"is_strike\":false,\"is_spare\":true},\"3\":{\"throw_1\":10,\"throw_2\":null,\"score\":70,\"is_strike\":true,\"is_spare\":false},\"4\":{\"throw_1\":10,\"throw_2\":null,\"score\":null,\"is_strike\":true,\"is_spare\":false},\"5\":{\"throw_1\":10,\"throw_2\":null,\"score\":null,\"is_strike\":true,\"is_spare\":false},\"6\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"8\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:33:37 UTC], ["id", 5]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/5/add_score" for ::1 at 2018-08-26 22:33:42 +0800
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":7,\"is_finished\":false,\"result\":100,\"pending_calculation\":[5,6],\"frames\":{\"1\":{\"throw_1\":10,\"throw_2\":null,\"score\":20,\"is_strike\":true,\"is_spare\":false},\"2\":{\"throw_1\":5,\"throw_2\":5,\"score\":40,\"is_strike\":false,\"is_spare\":true},\"3\":{\"throw_1\":10,\"throw_2\":null,\"score\":70,\"is_strike\":true,\"is_spare\":false},\"4\":{\"throw_1\":10,\"throw_2\":null,\"score\":100,\"is_strike\":true,\"is_spare\":false},\"5\":{\"throw_1\":10,\"throw_2\":null,\"score\":null,\"is_strike\":true,\"is_spare\":false},\"6\":{\"throw_1\":10,\"throw_2\":null,\"score\":null,\"is_strike\":true,\"is_spare\":false},\"7\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"8\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:33:42 UTC], ["id", 5]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/5/add_score" for ::1 at 2018-08-26 22:33:43 +0800
+  [1m[36mGame Load (1.7ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":8,\"is_finished\":false,\"result\":130,\"pending_calculation\":[6,7],\"frames\":{\"1\":{\"throw_1\":10,\"throw_2\":null,\"score\":20,\"is_strike\":true,\"is_spare\":false},\"2\":{\"throw_1\":5,\"throw_2\":5,\"score\":40,\"is_strike\":false,\"is_spare\":true},\"3\":{\"throw_1\":10,\"throw_2\":null,\"score\":70,\"is_strike\":true,\"is_spare\":false},\"4\":{\"throw_1\":10,\"throw_2\":null,\"score\":100,\"is_strike\":true,\"is_spare\":false},\"5\":{\"throw_1\":10,\"throw_2\":null,\"score\":130,\"is_strike\":true,\"is_spare\":false},\"6\":{\"throw_1\":10,\"throw_2\":null,\"score\":null,\"is_strike\":true,\"is_spare\":false},\"7\":{\"throw_1\":10,\"throw_2\":null,\"score\":null,\"is_strike\":true,\"is_spare\":false},\"8\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:33:43 UTC], ["id", 5]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/5/add_score" for ::1 at 2018-08-26 22:33:44 +0800
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":9,\"is_finished\":false,\"result\":160,\"pending_calculation\":[7,8],\"frames\":{\"1\":{\"throw_1\":10,\"throw_2\":null,\"score\":20,\"is_strike\":true,\"is_spare\":false},\"2\":{\"throw_1\":5,\"throw_2\":5,\"score\":40,\"is_strike\":false,\"is_spare\":true},\"3\":{\"throw_1\":10,\"throw_2\":null,\"score\":70,\"is_strike\":true,\"is_spare\":false},\"4\":{\"throw_1\":10,\"throw_2\":null,\"score\":100,\"is_strike\":true,\"is_spare\":false},\"5\":{\"throw_1\":10,\"throw_2\":null,\"score\":130,\"is_strike\":true,\"is_spare\":false},\"6\":{\"throw_1\":10,\"throw_2\":null,\"score\":160,\"is_strike\":true,\"is_spare\":false},\"7\":{\"throw_1\":10,\"throw_2\":null,\"score\":null,\"is_strike\":true,\"is_spare\":false},\"8\":{\"throw_1\":10,\"throw_2\":null,\"score\":null,\"is_strike\":true,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:33:44 UTC], ["id", 5]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/5/add_score" for ::1 at 2018-08-26 22:33:45 +0800
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":10,\"is_finished\":false,\"result\":190,\"pending_calculation\":[8,9],\"frames\":{\"1\":{\"throw_1\":10,\"throw_2\":null,\"score\":20,\"is_strike\":true,\"is_spare\":false},\"2\":{\"throw_1\":5,\"throw_2\":5,\"score\":40,\"is_strike\":false,\"is_spare\":true},\"3\":{\"throw_1\":10,\"throw_2\":null,\"score\":70,\"is_strike\":true,\"is_spare\":false},\"4\":{\"throw_1\":10,\"throw_2\":null,\"score\":100,\"is_strike\":true,\"is_spare\":false},\"5\":{\"throw_1\":10,\"throw_2\":null,\"score\":130,\"is_strike\":true,\"is_spare\":false},\"6\":{\"throw_1\":10,\"throw_2\":null,\"score\":160,\"is_strike\":true,\"is_spare\":false},\"7\":{\"throw_1\":10,\"throw_2\":null,\"score\":190,\"is_strike\":true,\"is_spare\":false},\"8\":{\"throw_1\":10,\"throw_2\":null,\"score\":null,\"is_strike\":true,\"is_spare\":false},\"9\":{\"throw_1\":10,\"throw_2\":null,\"score\":null,\"is_strike\":true,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:33:45 UTC], ["id", 5]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/5/add_score" for ::1 at 2018-08-26 22:33:47 +0800
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":10,\"is_finished\":false,\"result\":220,\"pending_calculation\":[9],\"frames\":{\"1\":{\"throw_1\":10,\"throw_2\":null,\"score\":20,\"is_strike\":true,\"is_spare\":false},\"2\":{\"throw_1\":5,\"throw_2\":5,\"score\":40,\"is_strike\":false,\"is_spare\":true},\"3\":{\"throw_1\":10,\"throw_2\":null,\"score\":70,\"is_strike\":true,\"is_spare\":false},\"4\":{\"throw_1\":10,\"throw_2\":null,\"score\":100,\"is_strike\":true,\"is_spare\":false},\"5\":{\"throw_1\":10,\"throw_2\":null,\"score\":130,\"is_strike\":true,\"is_spare\":false},\"6\":{\"throw_1\":10,\"throw_2\":null,\"score\":160,\"is_strike\":true,\"is_spare\":false},\"7\":{\"throw_1\":10,\"throw_2\":null,\"score\":190,\"is_strike\":true,\"is_spare\":false},\"8\":{\"throw_1\":10,\"throw_2\":null,\"score\":220,\"is_strike\":true,\"is_spare\":false},\"9\":{\"throw_1\":10,\"throw_2\":null,\"score\":null,\"is_strike\":true,\"is_spare\":false},\"10\":{\"throw_1\":10,\"throw_2\":null,\"score\":null,\"is_strike\":true,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:33:47 UTC], ["id", 5]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/5/add_score" for ::1 at 2018-08-26 22:33:50 +0800
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":10,\"is_finished\":false,\"result\":250,\"pending_calculation\":[],\"frames\":{\"1\":{\"throw_1\":10,\"throw_2\":null,\"score\":20,\"is_strike\":true,\"is_spare\":false},\"2\":{\"throw_1\":5,\"throw_2\":5,\"score\":40,\"is_strike\":false,\"is_spare\":true},\"3\":{\"throw_1\":10,\"throw_2\":null,\"score\":70,\"is_strike\":true,\"is_spare\":false},\"4\":{\"throw_1\":10,\"throw_2\":null,\"score\":100,\"is_strike\":true,\"is_spare\":false},\"5\":{\"throw_1\":10,\"throw_2\":null,\"score\":130,\"is_strike\":true,\"is_spare\":false},\"6\":{\"throw_1\":10,\"throw_2\":null,\"score\":160,\"is_strike\":true,\"is_spare\":false},\"7\":{\"throw_1\":10,\"throw_2\":null,\"score\":190,\"is_strike\":true,\"is_spare\":false},\"8\":{\"throw_1\":10,\"throw_2\":null,\"score\":220,\"is_strike\":true,\"is_spare\":false},\"9\":{\"throw_1\":10,\"throw_2\":null,\"score\":250,\"is_strike\":true,\"is_spare\":false},\"10\":{\"throw_1\":10,\"throw_2\":10,\"score\":null,\"is_strike\":true,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:33:50 UTC], ["id", 5]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/5/add_score" for ::1 at 2018-08-26 22:33:53 +0800
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":10,\"is_finished\":true,\"result\":280,\"pending_calculation\":[],\"frames\":{\"1\":{\"throw_1\":10,\"throw_2\":null,\"score\":20,\"is_strike\":true,\"is_spare\":false},\"2\":{\"throw_1\":5,\"throw_2\":5,\"score\":40,\"is_strike\":false,\"is_spare\":true},\"3\":{\"throw_1\":10,\"throw_2\":null,\"score\":70,\"is_strike\":true,\"is_spare\":false},\"4\":{\"throw_1\":10,\"throw_2\":null,\"score\":100,\"is_strike\":true,\"is_spare\":false},\"5\":{\"throw_1\":10,\"throw_2\":null,\"score\":130,\"is_strike\":true,\"is_spare\":false},\"6\":{\"throw_1\":10,\"throw_2\":null,\"score\":160,\"is_strike\":true,\"is_spare\":false},\"7\":{\"throw_1\":10,\"throw_2\":null,\"score\":190,\"is_strike\":true,\"is_spare\":false},\"8\":{\"throw_1\":10,\"throw_2\":null,\"score\":220,\"is_strike\":true,\"is_spare\":false},\"9\":{\"throw_1\":10,\"throw_2\":null,\"score\":250,\"is_strike\":true,\"is_spare\":false},\"10\":{\"throw_1\":10,\"throw_2\":10,\"score\":280,\"is_strike\":true,\"is_spare\":false,\"bonus\":10}}}"], ["updated_at", 2018-08-26 14:33:53 UTC], ["id", 5]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/6/add_score" for ::1 at 2018-08-26 22:52:37 +0800
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":2,\"is_finished\":false,\"result\":0,\"pending_calculation\":[1],\"frames\":{\"1\":{\"throw_1\":10,\"throw_2\":null,\"score\":null,\"is_strike\":true,\"is_spare\":false},\"2\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"3\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"4\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"5\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"6\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"8\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:52:38 UTC], ["id", 6]]
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/6/add_score" for ::1 at 2018-08-26 22:52:45 +0800
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":3,\"is_finished\":false,\"result\":0,\"pending_calculation\":[1,2],\"frames\":{\"1\":{\"throw_1\":10,\"throw_2\":null,\"score\":null,\"is_strike\":true,\"is_spare\":false},\"2\":{\"throw_1\":10,\"throw_2\":null,\"score\":null,\"is_strike\":true,\"is_spare\":false},\"3\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"4\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"5\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"6\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"8\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:52:45 UTC], ["id", 6]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/6/add_score" for ::1 at 2018-08-26 22:53:01 +0800
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":3,\"is_finished\":false,\"result\":20,\"pending_calculation\":[2],\"frames\":{\"1\":{\"throw_1\":10,\"throw_2\":null,\"score\":20,\"is_strike\":true,\"is_spare\":false},\"2\":{\"throw_1\":10,\"throw_2\":null,\"score\":null,\"is_strike\":true,\"is_spare\":false},\"3\":{\"throw_1\":0,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"4\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"5\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"6\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"8\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:53:01 UTC], ["id", 6]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/6/add_score" for ::1 at 2018-08-26 22:53:16 +0800
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":4,\"is_finished\":false,\"result\":40,\"pending_calculation\":[3],\"frames\":{\"1\":{\"throw_1\":10,\"throw_2\":null,\"score\":20,\"is_strike\":true,\"is_spare\":false},\"2\":{\"throw_1\":10,\"throw_2\":null,\"score\":40,\"is_strike\":true,\"is_spare\":false},\"3\":{\"throw_1\":0,\"throw_2\":10,\"score\":null,\"is_strike\":false,\"is_spare\":true},\"4\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"5\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"6\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"8\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:53:16 UTC], ["id", 6]]
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/6/add_score" for ::1 at 2018-08-26 22:55:12 +0800
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":4,\"is_finished\":false,\"result\":55,\"pending_calculation\":[],\"frames\":{\"1\":{\"throw_1\":10,\"throw_2\":null,\"score\":20,\"is_strike\":true,\"is_spare\":false},\"2\":{\"throw_1\":10,\"throw_2\":null,\"score\":40,\"is_strike\":true,\"is_spare\":false},\"3\":{\"throw_1\":0,\"throw_2\":10,\"score\":55,\"is_strike\":false,\"is_spare\":true},\"4\":{\"throw_1\":5,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"5\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"6\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"8\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:55:12 UTC], ["id", 6]]
+  [1m[35m (6.6ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/6/add_score" for ::1 at 2018-08-26 22:55:22 +0800
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":5,\"is_finished\":false,\"result\":55,\"pending_calculation\":[4],\"frames\":{\"1\":{\"throw_1\":10,\"throw_2\":null,\"score\":20,\"is_strike\":true,\"is_spare\":false},\"2\":{\"throw_1\":10,\"throw_2\":null,\"score\":40,\"is_strike\":true,\"is_spare\":false},\"3\":{\"throw_1\":0,\"throw_2\":10,\"score\":55,\"is_strike\":false,\"is_spare\":true},\"4\":{\"throw_1\":5,\"throw_2\":5,\"score\":null,\"is_strike\":false,\"is_spare\":true},\"5\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"6\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"8\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:55:22 UTC], ["id", 6]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/6/add_score" for ::1 at 2018-08-26 22:55:38 +0800
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":5,\"is_finished\":false,\"result\":67,\"pending_calculation\":[],\"frames\":{\"1\":{\"throw_1\":10,\"throw_2\":null,\"score\":20,\"is_strike\":true,\"is_spare\":false},\"2\":{\"throw_1\":10,\"throw_2\":null,\"score\":40,\"is_strike\":true,\"is_spare\":false},\"3\":{\"throw_1\":0,\"throw_2\":10,\"score\":55,\"is_strike\":false,\"is_spare\":true},\"4\":{\"throw_1\":5,\"throw_2\":5,\"score\":67,\"is_strike\":false,\"is_spare\":true},\"5\":{\"throw_1\":2,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"6\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"8\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:55:38 UTC], ["id", 6]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/6/add_score" for ::1 at 2018-08-26 22:55:41 +0800
+  [1m[36mGame Load (1.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":6,\"is_finished\":false,\"result\":73,\"pending_calculation\":[],\"frames\":{\"1\":{\"throw_1\":10,\"throw_2\":null,\"score\":20,\"is_strike\":true,\"is_spare\":false},\"2\":{\"throw_1\":10,\"throw_2\":null,\"score\":40,\"is_strike\":true,\"is_spare\":false},\"3\":{\"throw_1\":0,\"throw_2\":10,\"score\":55,\"is_strike\":false,\"is_spare\":true},\"4\":{\"throw_1\":5,\"throw_2\":5,\"score\":67,\"is_strike\":false,\"is_spare\":true},\"5\":{\"throw_1\":2,\"throw_2\":4,\"score\":73,\"is_strike\":false,\"is_spare\":false},\"6\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"8\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:55:41 UTC], ["id", 6]]
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/6/add_score" for ::1 at 2018-08-26 22:56:20 +0800
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":6,\"is_finished\":false,\"result\":73,\"pending_calculation\":[],\"frames\":{\"1\":{\"throw_1\":10,\"throw_2\":null,\"score\":20,\"is_strike\":true,\"is_spare\":false},\"2\":{\"throw_1\":10,\"throw_2\":null,\"score\":40,\"is_strike\":true,\"is_spare\":false},\"3\":{\"throw_1\":0,\"throw_2\":10,\"score\":55,\"is_strike\":false,\"is_spare\":true},\"4\":{\"throw_1\":5,\"throw_2\":5,\"score\":67,\"is_strike\":false,\"is_spare\":true},\"5\":{\"throw_1\":2,\"throw_2\":4,\"score\":73,\"is_strike\":false,\"is_spare\":false},\"6\":{\"throw_1\":3,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"8\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:56:20 UTC], ["id", 6]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/6/add_score" for ::1 at 2018-08-26 22:56:33 +0800
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":7,\"is_finished\":false,\"result\":81,\"pending_calculation\":[],\"frames\":{\"1\":{\"throw_1\":10,\"throw_2\":null,\"score\":20,\"is_strike\":true,\"is_spare\":false},\"2\":{\"throw_1\":10,\"throw_2\":null,\"score\":40,\"is_strike\":true,\"is_spare\":false},\"3\":{\"throw_1\":0,\"throw_2\":10,\"score\":55,\"is_strike\":false,\"is_spare\":true},\"4\":{\"throw_1\":5,\"throw_2\":5,\"score\":67,\"is_strike\":false,\"is_spare\":true},\"5\":{\"throw_1\":2,\"throw_2\":4,\"score\":73,\"is_strike\":false,\"is_spare\":false},\"6\":{\"throw_1\":3,\"throw_2\":5,\"score\":81,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"8\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:56:33 UTC], ["id", 6]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/6/add_score" for ::1 at 2018-08-26 22:57:04 +0800
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":7,\"is_finished\":false,\"result\":81,\"pending_calculation\":[],\"frames\":{\"1\":{\"throw_1\":10,\"throw_2\":null,\"score\":20,\"is_strike\":true,\"is_spare\":false},\"2\":{\"throw_1\":10,\"throw_2\":null,\"score\":40,\"is_strike\":true,\"is_spare\":false},\"3\":{\"throw_1\":0,\"throw_2\":10,\"score\":55,\"is_strike\":false,\"is_spare\":true},\"4\":{\"throw_1\":5,\"throw_2\":5,\"score\":67,\"is_strike\":false,\"is_spare\":true},\"5\":{\"throw_1\":2,\"throw_2\":4,\"score\":73,\"is_strike\":false,\"is_spare\":false},\"6\":{\"throw_1\":3,\"throw_2\":5,\"score\":81,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":5,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"8\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:57:04 UTC], ["id", 6]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/6/add_score" for ::1 at 2018-08-26 22:57:05 +0800
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":8,\"is_finished\":false,\"result\":81,\"pending_calculation\":[7],\"frames\":{\"1\":{\"throw_1\":10,\"throw_2\":null,\"score\":20,\"is_strike\":true,\"is_spare\":false},\"2\":{\"throw_1\":10,\"throw_2\":null,\"score\":40,\"is_strike\":true,\"is_spare\":false},\"3\":{\"throw_1\":0,\"throw_2\":10,\"score\":55,\"is_strike\":false,\"is_spare\":true},\"4\":{\"throw_1\":5,\"throw_2\":5,\"score\":67,\"is_strike\":false,\"is_spare\":true},\"5\":{\"throw_1\":2,\"throw_2\":4,\"score\":73,\"is_strike\":false,\"is_spare\":false},\"6\":{\"throw_1\":3,\"throw_2\":5,\"score\":81,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":5,\"throw_2\":5,\"score\":null,\"is_strike\":false,\"is_spare\":true},\"8\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:57:05 UTC], ["id", 6]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/6/add_score" for ::1 at 2018-08-26 22:57:06 +0800
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":8,\"is_finished\":false,\"result\":96,\"pending_calculation\":[],\"frames\":{\"1\":{\"throw_1\":10,\"throw_2\":null,\"score\":20,\"is_strike\":true,\"is_spare\":false},\"2\":{\"throw_1\":10,\"throw_2\":null,\"score\":40,\"is_strike\":true,\"is_spare\":false},\"3\":{\"throw_1\":0,\"throw_2\":10,\"score\":55,\"is_strike\":false,\"is_spare\":true},\"4\":{\"throw_1\":5,\"throw_2\":5,\"score\":67,\"is_strike\":false,\"is_spare\":true},\"5\":{\"throw_1\":2,\"throw_2\":4,\"score\":73,\"is_strike\":false,\"is_spare\":false},\"6\":{\"throw_1\":3,\"throw_2\":5,\"score\":81,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":5,\"throw_2\":5,\"score\":96,\"is_strike\":false,\"is_spare\":true},\"8\":{\"throw_1\":5,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:57:06 UTC], ["id", 6]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/6/add_score" for ::1 at 2018-08-26 22:57:07 +0800
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":9,\"is_finished\":false,\"result\":96,\"pending_calculation\":[8],\"frames\":{\"1\":{\"throw_1\":10,\"throw_2\":null,\"score\":20,\"is_strike\":true,\"is_spare\":false},\"2\":{\"throw_1\":10,\"throw_2\":null,\"score\":40,\"is_strike\":true,\"is_spare\":false},\"3\":{\"throw_1\":0,\"throw_2\":10,\"score\":55,\"is_strike\":false,\"is_spare\":true},\"4\":{\"throw_1\":5,\"throw_2\":5,\"score\":67,\"is_strike\":false,\"is_spare\":true},\"5\":{\"throw_1\":2,\"throw_2\":4,\"score\":73,\"is_strike\":false,\"is_spare\":false},\"6\":{\"throw_1\":3,\"throw_2\":5,\"score\":81,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":5,\"throw_2\":5,\"score\":96,\"is_strike\":false,\"is_spare\":true},\"8\":{\"throw_1\":5,\"throw_2\":5,\"score\":null,\"is_strike\":false,\"is_spare\":true},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:57:07 UTC], ["id", 6]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/6/add_score" for ::1 at 2018-08-26 22:57:13 +0800
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":9,\"is_finished\":false,\"result\":111,\"pending_calculation\":[],\"frames\":{\"1\":{\"throw_1\":10,\"throw_2\":null,\"score\":20,\"is_strike\":true,\"is_spare\":false},\"2\":{\"throw_1\":10,\"throw_2\":null,\"score\":40,\"is_strike\":true,\"is_spare\":false},\"3\":{\"throw_1\":0,\"throw_2\":10,\"score\":55,\"is_strike\":false,\"is_spare\":true},\"4\":{\"throw_1\":5,\"throw_2\":5,\"score\":67,\"is_strike\":false,\"is_spare\":true},\"5\":{\"throw_1\":2,\"throw_2\":4,\"score\":73,\"is_strike\":false,\"is_spare\":false},\"6\":{\"throw_1\":3,\"throw_2\":5,\"score\":81,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":5,\"throw_2\":5,\"score\":96,\"is_strike\":false,\"is_spare\":true},\"8\":{\"throw_1\":5,\"throw_2\":5,\"score\":111,\"is_strike\":false,\"is_spare\":true},\"9\":{\"throw_1\":5,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:57:13 UTC], ["id", 6]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/6/add_score" for ::1 at 2018-08-26 22:57:14 +0800
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":10,\"is_finished\":false,\"result\":111,\"pending_calculation\":[9],\"frames\":{\"1\":{\"throw_1\":10,\"throw_2\":null,\"score\":20,\"is_strike\":true,\"is_spare\":false},\"2\":{\"throw_1\":10,\"throw_2\":null,\"score\":40,\"is_strike\":true,\"is_spare\":false},\"3\":{\"throw_1\":0,\"throw_2\":10,\"score\":55,\"is_strike\":false,\"is_spare\":true},\"4\":{\"throw_1\":5,\"throw_2\":5,\"score\":67,\"is_strike\":false,\"is_spare\":true},\"5\":{\"throw_1\":2,\"throw_2\":4,\"score\":73,\"is_strike\":false,\"is_spare\":false},\"6\":{\"throw_1\":3,\"throw_2\":5,\"score\":81,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":5,\"throw_2\":5,\"score\":96,\"is_strike\":false,\"is_spare\":true},\"8\":{\"throw_1\":5,\"throw_2\":5,\"score\":111,\"is_strike\":false,\"is_spare\":true},\"9\":{\"throw_1\":5,\"throw_2\":5,\"score\":null,\"is_strike\":false,\"is_spare\":true},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:57:14 UTC], ["id", 6]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/6/add_score" for ::1 at 2018-08-26 22:57:18 +0800
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":10,\"is_finished\":false,\"result\":126,\"pending_calculation\":[],\"frames\":{\"1\":{\"throw_1\":10,\"throw_2\":null,\"score\":20,\"is_strike\":true,\"is_spare\":false},\"2\":{\"throw_1\":10,\"throw_2\":null,\"score\":40,\"is_strike\":true,\"is_spare\":false},\"3\":{\"throw_1\":0,\"throw_2\":10,\"score\":55,\"is_strike\":false,\"is_spare\":true},\"4\":{\"throw_1\":5,\"throw_2\":5,\"score\":67,\"is_strike\":false,\"is_spare\":true},\"5\":{\"throw_1\":2,\"throw_2\":4,\"score\":73,\"is_strike\":false,\"is_spare\":false},\"6\":{\"throw_1\":3,\"throw_2\":5,\"score\":81,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":5,\"throw_2\":5,\"score\":96,\"is_strike\":false,\"is_spare\":true},\"8\":{\"throw_1\":5,\"throw_2\":5,\"score\":111,\"is_strike\":false,\"is_spare\":true},\"9\":{\"throw_1\":5,\"throw_2\":5,\"score\":126,\"is_strike\":false,\"is_spare\":true},\"10\":{\"throw_1\":5,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:57:18 UTC], ["id", 6]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/6/add_score" for ::1 at 2018-08-26 22:57:24 +0800
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":10,\"is_finished\":true,\"result\":135,\"pending_calculation\":[],\"frames\":{\"1\":{\"throw_1\":10,\"throw_2\":null,\"score\":20,\"is_strike\":true,\"is_spare\":false},\"2\":{\"throw_1\":10,\"throw_2\":null,\"score\":40,\"is_strike\":true,\"is_spare\":false},\"3\":{\"throw_1\":0,\"throw_2\":10,\"score\":55,\"is_strike\":false,\"is_spare\":true},\"4\":{\"throw_1\":5,\"throw_2\":5,\"score\":67,\"is_strike\":false,\"is_spare\":true},\"5\":{\"throw_1\":2,\"throw_2\":4,\"score\":73,\"is_strike\":false,\"is_spare\":false},\"6\":{\"throw_1\":3,\"throw_2\":5,\"score\":81,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":5,\"throw_2\":5,\"score\":96,\"is_strike\":false,\"is_spare\":true},\"8\":{\"throw_1\":5,\"throw_2\":5,\"score\":111,\"is_strike\":false,\"is_spare\":true},\"9\":{\"throw_1\":5,\"throw_2\":5,\"score\":126,\"is_strike\":false,\"is_spare\":true},\"10\":{\"throw_1\":5,\"throw_2\":4,\"score\":135,\"is_strike\":false,\"is_spare\":false}}}"], ["updated_at", 2018-08-26 14:57:24 UTC], ["id", 6]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/6/add_score" for ::1 at 2018-08-26 22:58:50 +0800
+  [1m[36mGame Load (1.1ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Started GET "/documentation" for ::1 at 2018-08-27 18:09:08 +0800
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from raise_in_transactional_callbacks= at /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/activerecord-5.0.0/lib/active_record/transactions.rb:283)
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block (2 levels) in <module:ClassMethods> at /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/abstract_controller/callbacks.rb:191)
+Processing by GrapeSwaggerRails::ApplicationController#index as HTML
+  Rendering /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/grape-swagger-rails-0.2.1/app/views/grape_swagger_rails/application/index.html.erb
+  Rendered /Users/apple/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/grape-swagger-rails-0.2.1/app/views/grape_swagger_rails/application/index.html.erb (480.9ms)
+Completed 200 OK in 540ms (Views: 516.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/swagger_doc" for ::1 at 2018-08-27 18:09:10 +0800
+Started PUT "/api/v1/games/6/add_score" for ::1 at 2018-08-27 18:09:27 +0800
+  [1m[36mGame Load (6.9ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Started PUT "/api/v1/games/7/add_score" for ::1 at 2018-08-27 18:09:33 +0800
+  [1m[36mGame Load (2.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":1,\"is_finished\":false,\"result\":0,\"pending_calculation\":[],\"frames\":{\"1\":{\"throw_1\":0,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"2\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"3\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"4\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"5\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"6\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"8\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["updated_at", 2018-08-27 10:09:33 UTC], ["id", 7]]
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+Started PUT "/api/v1/games/7/add_score" for ::1 at 2018-08-27 18:09:48 +0800
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (6.5ms)[0m  [1m[33mUPDATE "games" SET "score_info" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["score_info", "{\"current_frame_no\":2,\"is_finished\":false,\"result\":9,\"pending_calculation\":[],\"frames\":{\"1\":{\"throw_1\":0,\"throw_2\":9,\"score\":9,\"is_strike\":false,\"is_spare\":false},\"2\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"3\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"4\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"5\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"6\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"7\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"8\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"9\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false},\"10\":{\"throw_1\":null,\"throw_2\":null,\"score\":null,\"is_strike\":false,\"is_spare\":false}}}"], ["updated_at", 2018-08-27 10:09:48 UTC], ["id", 7]]
+  [1m[35m (7.1ms)[0m  [1m[35mCOMMIT[0m
