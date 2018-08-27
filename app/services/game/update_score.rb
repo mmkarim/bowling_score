@@ -11,8 +11,8 @@ class Game::UpdateScore
     error_msg = check_error
     return [false, error_msg] if error_msg
 
-    add_score
-    calculate_pending_score
+    add_score # Add score value to correct frame
+    calculate_pending_score # Calculate results after adding score if possible
 
     @game.score_info = @score_info
     if @game.save
@@ -42,7 +42,7 @@ class Game::UpdateScore
       add_value_to_throw_2 frame_no, current_frame
 
     elsif frame_no == 10 && (current_frame[:is_spare] || current_frame[:is_strike])
-      current_frame[:bonus] = @value
+      current_frame[:bonus] = @value # Add bonus throw value for 10th frame
       @score_info[:pending_calculation] << frame_no
     end
   end

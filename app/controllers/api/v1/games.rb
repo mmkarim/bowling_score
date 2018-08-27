@@ -9,7 +9,7 @@ module API
           optional :player_name, type: String, desc: "Give a player name"
         end
         post "/" do
-          Game.create!
+          Game.create! player_name: params[:player_name]
         end
 
         desc "Check details of a game"

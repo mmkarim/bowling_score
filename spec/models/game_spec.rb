@@ -1,8 +1,7 @@
 require "rails_helper"
 
 describe Game do
-  subject { Game }
-  it { should be_valid }
-
-  let!(:game){FactoryGirl.create :game}
+  it "should assign score_info upon creation" do
+    expect(Game.create!.score_info).not_to be_nil
+  end
 end
